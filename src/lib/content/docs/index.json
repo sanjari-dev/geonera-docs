@@ -1,0 +1,20 @@
+{
+  "sections": [
+    { "title": "Executive Overview", "slug": "overview" },
+    { "title": "System Architecture", "slug": "architecture" },
+    { "title": "Data Pipeline", "slug": "data-pipeline" },
+    { "title": "AI/ML Pipeline", "slug": "ai-ml" },
+    { "title": "Signal Generation", "slug": "signals" },
+    { "title": "Meta Model", "slug": "meta-model" },
+    { "title": "Risk Management", "slug": "risk" },
+    { "title": "Backtesting & Validation", "slug": "backtesting" },
+    { "title": "Real-Time Processing", "slug": "realtime" },
+    { "title": "Infrastructure & Scalability", "slug": "infrastructure" },
+    { "title": "Observability", "slug": "observability" },
+    { "title": "Explainability", "slug": "explainability" },
+    { "title": "Admin UI", "slug": "admin-ui" },
+    { "title": "Integration Layer", "slug": "integration" },
+    { "title": "Business Model", "slug": "business" },
+    { "title": "Roadmap", "slug": "roadmap" }
+  ]
+}
