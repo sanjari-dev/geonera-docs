@@ -1,0 +1,27 @@
+<svelte:head>
+  <title>System Architecture | Geonera Docs</title>
+  <meta name="description" content="Polyglot microservices architecture: Go, Rust, Python, C#, Java." />
+</svelte:head>
+
+# System Architecture
+
+> **Section**: Getting Started
+
+Polyglot microservices architecture: Go, Rust, Python, C#, Java.
+
+## Overview
+
+This section covers System Architecture for the Geonera platform. Detailed documentation is being actively developed.
+
+## Coming Soon
+
+Full technical content for this section will include:
+
+- Architecture diagrams and component explanations
+- Step-by-step configuration guides
+- Code examples and integration patterns
+- Best practices and troubleshooting tips
+
+---
+
+*Last updated: 2026-04-02 · Geonera Documentation v2.0*

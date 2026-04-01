@@ -2,53 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Reset & Base Styles */
+* {
+  @apply box-border;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+html, body {
+  @apply m-0 p-0 h-full;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 font-sans;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(15, 23, 42);
+  background: #0a0e1b;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(71, 85, 105);
-  border-radius: 4px;
+  @apply bg-slate-700 rounded;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(100, 116, 139);
+  @apply bg-slate-600;
 }
 
-/* Syntax Highlighting Base */
-pre code {
-  @apply text-sm;
+/* Firefox Scrollbar */
+* {
+  scrollbar-color: rgb(71, 85, 105) rgb(15, 23, 42);
+  scrollbar-width: thin;
 }
 
-code {
-  @apply bg-slate-800 px-1.5 py-0.5 rounded text-sm font-mono text-cyan-300;
-}
-
-pre code {
-  @apply bg-transparent px-0 py-0 text-slate-200;
-}
-
-/* Typography */
+/* Typography System */
 h1 {
-  @apply text-4xl font-bold mb-4;
+  @apply text-5xl font-bold mb-6 mt-0 bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent;
 }
 
 h2 {
-  @apply text-3xl font-bold mb-4 mt-8;
+  @apply text-4xl font-bold mb-4 mt-12 text-slate-100;
 }
 
 h3 {
-  @apply text-2xl font-bold mb-3 mt-6;
+  @apply text-2xl font-bold mb-3 mt-8 text-slate-200;
 }
 
 h4 {
-  @apply text-lg font-semibold mb-2 mt-4;
+  @apply text-xl font-semibold mb-2 mt-6 text-slate-300;
+}
+
+h5 {
+  @apply text-lg font-semibold mb-2 text-slate-300;
+}
+
+h6 {
+  @apply text-base font-semibold mb-2 text-slate-400;
 }
 
 p {
@@ -56,15 +73,32 @@ p {
 }
 
 a {
-  @apply text-cyan-400 hover:text-cyan-300 transition;
+  @apply text-cyan-400 hover:text-cyan-300 underline transition-colors duration-200;
 }
 
-strong {
+a:visited {
+  @apply text-cyan-300;
+}
+
+strong, b {
   @apply font-bold text-slate-100;
 }
 
-em {
+em, i {
   @apply italic text-slate-300;
+}
+
+code {
+  @apply bg-slate-800 text-cyan-300 px-2 py-1 rounded text-sm font-mono border border-slate-700;
+}
+
+pre {
+  @apply bg-slate-900 rounded-lg overflow-x-auto my-4 p-4 border border-slate-700;
+  @apply text-sm text-slate-200 leading-relaxed;
+}
+
+pre code {
+  @apply bg-transparent text-inherit px-0 py-0 border-none;
 }
 
 /* Lists */
@@ -76,8 +110,22 @@ li {
   @apply text-slate-300;
 }
 
+ul li {
+  @apply list-none;
+}
+
+ul li::before {
+  content: '•';
+  @apply mr-3 text-cyan-400;
+}
+
+ol {
+  @apply list-decimal;
+}
+
+/* Blockquote */
 blockquote {
-  @apply border-l-4 border-cyan-400 pl-4 py-2 my-4 bg-slate-900/50 italic text-slate-400;
+  @apply border-l-4 border-cyan-400 pl-4 py-2 my-4 bg-slate-900/50 italic text-slate-400 rounded-r;
 }
 
 /* Tables */
@@ -85,15 +133,45 @@ table {
   @apply w-full border-collapse my-4;
 }
 
+thead {
+  @apply bg-slate-800;
+}
+
 th {
-  @apply bg-slate-800 text-cyan-300 font-bold p-3 text-left border border-slate-700;
+  @apply text-cyan-300 font-bold p-3 text-left border border-slate-700;
 }
 
 td {
   @apply p-3 border border-slate-700 text-slate-300;
 }
 
-/* Code Blocks in Content */
+tbody tr {
+  @apply hover:bg-slate-900/50 transition-colors;
+}
+
+/* Inline Code in Content */
 :not(pre) > code {
-  @apply bg-slate-800 text-cyan-300 px-2 py-1 rounded text-sm font-mono;
+  @apply bg-slate-800 text-cyan-300 px-2 py-1 rounded text-sm font-mono border border-slate-700;
+}
+
+/* Emphasis Boxes */
+.alert-info {
+  @apply bg-blue-950/30 border-l-4 border-blue-400 p-4 rounded-r my-4;
+}
+
+.alert-warning {
+  @apply bg-amber-950/30 border-l-4 border-amber-400 p-4 rounded-r my-4;
+}
+
+.alert-success {
+  @apply bg-emerald-950/30 border-l-4 border-emerald-400 p-4 rounded-r my-4;
+}
+
+.alert-danger {
+  @apply bg-red-950/30 border-l-4 border-red-400 p-4 rounded-r my-4;
+}
+
+/* Utility Classes */
+.text-gradient {
+  @apply bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent;
 }

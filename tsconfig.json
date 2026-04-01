@@ -5,6 +5,7 @@
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
+    "esModuleInterop": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "moduleDetection": "force",
@@ -18,9 +19,24 @@
       "$lib": ["src/lib"],
       "$lib/*": ["src/lib/*"],
       "$components": ["src/lib/components"],
-      "$components/*": ["src/lib/components/*"]
+      "$components/*": ["src/lib/components/*"],
+      "$stores": ["src/lib/stores"],
+      "$stores/*": ["src/lib/stores/*"],
+      "$utils": ["src/lib/utils"],
+      "$utils/*": ["src/lib/utils/*"]
     }
   },
-  "include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte", "src/**/*.svx"],
-  "exclude": ["node_modules", ".svelte-kit", "build"]
+  "include": [
+    "src/**/*.d.ts",
+    "src/**/*.js",
+    "src/**/*.ts",
+    "src/**/*.svelte",
+    "src/**/*.svx"
+  ],
+  "exclude": [
+    "node_modules",
+    ".svelte-kit",
+    "build",
+    "dist"
+  ]
 }

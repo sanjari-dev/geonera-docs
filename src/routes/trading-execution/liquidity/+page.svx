@@ -1,0 +1,27 @@
+<svelte:head>
+  <title>Liquidity Providers | Geonera Docs</title>
+  <meta name="description" content="Liquidity provider connectivity and execution quality analysis." />
+</svelte:head>
+
+# Liquidity Providers
+
+> **Section**: Trading Execution
+
+Liquidity provider connectivity and execution quality analysis.
+
+## Overview
+
+This section covers Liquidity Providers for the Geonera platform. Detailed documentation is being actively developed.
+
+## Coming Soon
+
+Full technical content for this section will include:
+
+- Architecture diagrams and component explanations
+- Step-by-step configuration guides
+- Code examples and integration patterns
+- Best practices and troubleshooting tips
+
+---
+
+*Last updated: 2026-04-02 · Geonera Documentation v2.0*

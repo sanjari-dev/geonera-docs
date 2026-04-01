@@ -1,29 +1,29 @@
 <script>
   export let method = 'GET';
   export let endpoint = '/';
-  export let title = 'Endpoint';
+  export let description = '';
 
-  const methodColors = {
-    GET: 'bg-blue-500/20 text-blue-300',
-    POST: 'bg-green-500/20 text-green-300',
-    PUT: 'bg-yellow-500/20 text-yellow-300',
-    DELETE: 'bg-red-500/20 text-red-300',
-    PATCH: 'bg-orange-500/20 text-orange-300',
+  const methodStyles = {
+    GET: 'bg-blue-500/20 text-blue-300 border border-blue-500/30',
+    POST: 'bg-green-500/20 text-green-300 border border-green-500/30',
+    PUT: 'bg-yellow-500/20 text-yellow-300 border border-yellow-500/30',
+    DELETE: 'bg-red-500/20 text-red-300 border border-red-500/30',
+    PATCH: 'bg-orange-500/20 text-orange-300 border border-orange-500/30',
   };
+
+  const style = methodStyles[method] || methodStyles.GET;
 </script>
 
-<div class="mb-8">
-  <div class="mb-4">
-    <div class={`inline-block ${methodColors[method] || 'bg-slate-500/20 text-slate-300'} px-3 py-1 rounded text-xs font-bold mb-3`}>
+<div class="my-6 space-y-3">
+  <div class="flex items-baseline gap-3 flex-wrap">
+    <span class={`px-3 py-1 rounded text-xs font-bold ${style}`}>
       {method}
-    </div>
-    <h3 class="text-2xl font-bold mb-2 font-mono">{endpoint}</h3>
-    <p class="text-slate-400">{title}</p>
+    </span>
+    <code class="text-xl font-mono text-slate-100 px-3 py-1 rounded" style="background-color: rgb(30, 41, 59);">
+      {endpoint}
+    </code>
   </div>
+  {#if description}
+    <p class="text-slate-300">{description}</p>
+  {/if}
 </div>
-
-<style>
-  :global(h3) {
-    color: #e2e8f0;
-  }
-</style>

@@ -1,0 +1,27 @@
+<svelte:head>
+  <title>Price History | Geonera Docs</title>
+  <meta name="description" content="Historical OHLCV price data retrieval with time filtering." />
+</svelte:head>
+
+# Price History
+
+> **Section**: API Reference
+
+Historical OHLCV price data retrieval with time filtering.
+
+## Overview
+
+This section covers Price History for the Geonera platform. Detailed documentation is being actively developed.
+
+## Coming Soon
+
+Full technical content for this section will include:
+
+- Architecture diagrams and component explanations
+- Step-by-step configuration guides
+- Code examples and integration patterns
+- Best practices and troubleshooting tips
+
+---
+
+*Last updated: 2026-04-02 · Geonera Documentation v2.0*

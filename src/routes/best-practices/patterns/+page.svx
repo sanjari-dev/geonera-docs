@@ -1,0 +1,27 @@
+<svelte:head>
+  <title>Design Patterns | Geonera Docs</title>
+  <meta name="description" content="Recommended architectural patterns for Geonera integrations." />
+</svelte:head>
+
+# Design Patterns
+
+> **Section**: Best Practices
+
+Recommended architectural patterns for Geonera integrations.
+
+## Overview
+
+This section covers Design Patterns for the Geonera platform. Detailed documentation is being actively developed.
+
+## Coming Soon
+
+Full technical content for this section will include:
+
+- Architecture diagrams and component explanations
+- Step-by-step configuration guides
+- Code examples and integration patterns
+- Best practices and troubleshooting tips
+
+---
+
+*Last updated: 2026-04-02 · Geonera Documentation v2.0*

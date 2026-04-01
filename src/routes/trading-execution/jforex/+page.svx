@@ -1,0 +1,27 @@
+<svelte:head>
+  <title>JForex Integration | Geonera Docs</title>
+  <meta name="description" content="Java-based JForex platform integration for Dukascopy execution." />
+</svelte:head>
+
+# JForex Integration
+
+> **Section**: Trading Execution
+
+Java-based JForex platform integration for Dukascopy execution.
+
+## Overview
+
+This section covers JForex Integration for the Geonera platform. Detailed documentation is being actively developed.
+
+## Coming Soon
+
+Full technical content for this section will include:
+
+- Architecture diagrams and component explanations
+- Step-by-step configuration guides
+- Code examples and integration patterns
+- Best practices and troubleshooting tips
+
+---
+
+*Last updated: 2026-04-02 · Geonera Documentation v2.0*

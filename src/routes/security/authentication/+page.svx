@@ -1,0 +1,27 @@
+<svelte:head>
+  <title>Authentication & Authorization | Geonera Docs</title>
+  <meta name="description" content="JWT tokens, API key rotation, and RBAC policies." />
+</svelte:head>
+
+# Authentication & Authorization
+
+> **Section**: Security
+
+JWT tokens, API key rotation, and RBAC policies.
+
+## Overview
+
+This section covers Authentication & Authorization for the Geonera platform. Detailed documentation is being actively developed.
+
+## Coming Soon
+
+Full technical content for this section will include:
+
+- Architecture diagrams and component explanations
+- Step-by-step configuration guides
+- Code examples and integration patterns
+- Best practices and troubleshooting tips
+
+---
+
+*Last updated: 2026-04-02 · Geonera Documentation v2.0*

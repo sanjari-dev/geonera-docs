@@ -1,0 +1,27 @@
+<svelte:head>
+  <title>Message Queue (RabbitMQ) | Geonera Docs</title>
+  <meta name="description" content="RabbitMQ setup, queue topology, and message routing." />
+</svelte:head>
+
+# Message Queue (RabbitMQ)
+
+> **Section**: Infrastructure
+
+RabbitMQ setup, queue topology, and message routing.
+
+## Overview
+
+This section covers Message Queue (RabbitMQ) for the Geonera platform. Detailed documentation is being actively developed.
+
+## Coming Soon
+
+Full technical content for this section will include:
+
+- Architecture diagrams and component explanations
+- Step-by-step configuration guides
+- Code examples and integration patterns
+- Best practices and troubleshooting tips
+
+---
+
+*Last updated: 2026-04-02 · Geonera Documentation v2.0*

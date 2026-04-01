@@ -1,0 +1,27 @@
+<svelte:head>
+  <title>Training & Validation | Geonera Docs</title>
+  <meta name="description" content="Model training pipeline, cross-validation, and hyperparameter tuning." />
+</svelte:head>
+
+# Training & Validation
+
+> **Section**: AI/ML Model
+
+Model training pipeline, cross-validation, and hyperparameter tuning.
+
+## Overview
+
+This section covers Training & Validation for the Geonera platform. Detailed documentation is being actively developed.
+
+## Coming Soon
+
+Full technical content for this section will include:
+
+- Architecture diagrams and component explanations
+- Step-by-step configuration guides
+- Code examples and integration patterns
+- Best practices and troubleshooting tips
+
+---
+
+*Last updated: 2026-04-02 · Geonera Documentation v2.0*
