@@ -1,37 +1,28 @@
 <script>
-  import { page } from '$app/stores';
+  import '../styles/global.css';
   import Sidebar from '$lib/components/Sidebar.svelte';
   import Header from '$lib/components/Header.svelte';
-  import '../styles/global.css';
-  import { fade } from 'svelte/transition';
 
-  let sidebarOpen = false;
-
-  $: if (typeof window !== 'undefined') {
-    if (window.innerWidth < 768) {
-      sidebarOpen = false;
-    }
-  }
+  let sidebarOpen = true;
 </script>
-
-<svelte:head>
-  <title>Geonera Documentation</title>
-</svelte:head>
 
 <div class="flex h-screen bg-slate-950 text-slate-100">
   <Sidebar bind:open={sidebarOpen} />
 
   <div class="flex-1 flex flex-col overflow-hidden">
     <Header bind:sidebarOpen />
-
-    <main class="flex-1 overflow-y-auto" in:fade={{ duration: 200 }}>
+    <main class="flex-1 overflow-y-auto">
       <slot />
     </main>
   </div>
 </div>
 
-<style>
+<style global>
   :global(html, body) {
-    overflow: hidden;
+    @apply m-0 p-0;
+  }
+
+  :global(*) {
+    @apply box-border;
   }
 </style>

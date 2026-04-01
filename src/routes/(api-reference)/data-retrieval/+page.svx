@@ -25,7 +25,7 @@ Authorization: Bearer YOUR_API_KEY
 
 ## List Signals Endpoint
 
-<ApiEndpoint method="GET" endpoint="/signals" description="Mengambil daftar trading signal dengan dukungan pagination dan filtering." />
+<ApiEndpoint method="GET" endpoint="/signals" title="Mengambil daftar trading signal dengan dukungan pagination dan filtering." />
 
 ### Deskripsi Singkat
 
