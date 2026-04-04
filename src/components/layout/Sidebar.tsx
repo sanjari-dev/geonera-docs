@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import { Icon } from '@/components/ui/Icon'
 import { navLinks, bottomNavLinks } from '@/data/content'
 
@@ -24,32 +25,33 @@ export function Sidebar() {
       {/* Nav */}
       <nav className="flex-1 overflow-y-auto px-4 py-2 space-y-1">
         {navLinks.map((link) => (
-          <a
-            key={link.label}
-            href={link.href}
-            className={
-              link.active
+          <NavLink
+            key={link.href}
+            to={link.href}
+            end={link.href === '/'}
+            className={({ isActive }) =>
+              isActive
                 ? 'flex items-center gap-3 px-3 py-2 bg-white text-blue-700 shadow-sm rounded font-medium text-[13px] transition-all duration-150'
                 : 'flex items-center gap-3 px-3 py-2 text-slate-600 hover:bg-slate-200/50 hover:text-slate-900 rounded font-medium text-[13px] transition-all duration-150'
             }
           >
             <Icon name={link.icon} className="text-lg" />
             <span>{link.label}</span>
-          </a>
+          </NavLink>
         ))}
       </nav>
 
       {/* Bottom */}
       <div className="p-4 space-y-1 border-t border-slate-200 bg-slate-100/50">
         {bottomNavLinks.map((link) => (
-          <a
-            key={link.label}
-            href={link.href}
+          <NavLink
+            key={link.href}
+            to={link.href}
             className="flex items-center gap-3 px-3 py-2 text-slate-600 hover:underline text-[11px] font-medium uppercase tracking-wider"
           >
             <Icon name={link.icon} className="text-base" />
             <span>{link.label}</span>
-          </a>
+          </NavLink>
         ))}
       </div>
     </aside>

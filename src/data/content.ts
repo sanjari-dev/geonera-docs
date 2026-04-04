@@ -1,26 +1,26 @@
 import type { NavLink, DomainCard, DocEntry, PopularEntry, StatItem } from '@/types'
 
 export const navLinks: NavLink[] = [
-  { label: 'Dashboard',        icon: 'dashboard',               href: '#', active: true },
-  { label: 'Core Architecture', icon: 'architecture',            href: '#' },
-  { label: 'API Reference',    icon: 'api',                     href: '#' },
-  { label: 'Data Models',      icon: 'database',                href: '#' },
-  { label: 'Infrastructure',   icon: 'settings_input_component', href: '#' },
-  { label: 'Security',         icon: 'security',                href: '#' },
-  { label: 'DevOps',           icon: 'terminal',                href: '#' },
-  { label: 'Frontend',         icon: 'web',                     href: '#' },
-  { label: 'Mobile',           icon: 'smartphone',              href: '#' },
-  { label: 'Testing',          icon: 'rule',                    href: '#' },
-  { label: 'Analytics',        icon: 'analytics',               href: '#' },
-  { label: 'ML Pipeline',      icon: 'psychology',              href: '#' },
-  { label: 'Storage',          icon: 'storage',                 href: '#' },
-  { label: 'Networking',       icon: 'lan',                     href: '#' },
-  { label: 'Auth',             icon: 'fingerprint',             href: '#' },
+  { label: 'Dashboard',         icon: 'dashboard',                href: '/' },
+  { label: 'Core Architecture', icon: 'architecture',             href: '/architecture' },
+  { label: 'API Reference',     icon: 'api',                      href: '/api' },
+  { label: 'Data Models',       icon: 'database',                 href: '/data-models' },
+  { label: 'Infrastructure',    icon: 'settings_input_component', href: '/infrastructure' },
+  { label: 'Security',          icon: 'security',                 href: '/security' },
+  { label: 'DevOps',            icon: 'terminal',                 href: '/devops' },
+  { label: 'Frontend',          icon: 'web',                      href: '/frontend' },
+  { label: 'Mobile',            icon: 'smartphone',               href: '/mobile' },
+  { label: 'Testing',           icon: 'rule',                     href: '/testing' },
+  { label: 'Analytics',         icon: 'analytics',                href: '/analytics' },
+  { label: 'ML Pipeline',       icon: 'psychology',               href: '/ml-pipeline' },
+  { label: 'Storage',           icon: 'storage',                  href: '/storage' },
+  { label: 'Networking',        icon: 'lan',                      href: '/networking' },
+  { label: 'Auth',              icon: 'fingerprint',              href: '/auth' },
 ]
 
 export const bottomNavLinks: NavLink[] = [
-  { label: 'Documentation Help', icon: 'help',    href: '#' },
-  { label: 'System Status',      icon: 'sensors', href: '#' },
+  { label: 'Documentation Help', icon: 'help',    href: '/help' },
+  { label: 'System Status',      icon: 'sensors', href: '/status' },
 ]
 
 export const domains: DomainCard[] = [

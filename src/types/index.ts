@@ -2,7 +2,6 @@ export interface NavLink {
   label: string
   icon: string
   href: string
-  active?: boolean
 }
 
 export interface DomainCard {
