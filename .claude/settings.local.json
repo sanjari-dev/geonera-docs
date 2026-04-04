@@ -18,7 +18,19 @@
       "Bash(find C:devgeonerarepodocssrcpages -type f -name *.ts -o -name *.tsx -o -name *.mdx)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(curl -s \"http://localhost:5173/src/App.tsx\")",
+      "Bash(rm -rf node_modules/.vite .vite)",
+      "Bash(curl -s http://localhost:5173/src/App.tsx)",
+      "Bash(netstat -ano)",
+      "Bash(findstr :5173)",
+      "Bash(taskkill /PID 9268 /F)",
+      "Bash(cmd /c \"taskkill /PID 9268 /F\")",
+      "Bash(curl -s http://localhost:5173/)",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Read(//c/dev/geonera/repo/docs/**)",
+      "Bash(done)"
     ]
   }
 }
