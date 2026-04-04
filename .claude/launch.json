@@ -5,6 +5,7 @@
       "name": "Vite Dev Server",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
+      "cwd": "C:\\dev\\geonera\\repo\\docs",
       "port": 5173
     },
     {
