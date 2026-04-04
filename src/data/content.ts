@@ -3,6 +3,7 @@ import type { NavLink, DomainCard, DocEntry, PopularEntry, StatItem } from '@/ty
 export const navLinks: NavLink[] = [
   { label: 'Dashboard',              icon: 'dashboard',                href: '/' },
   { label: 'Core Architecture',      icon: 'architecture',             href: '/architecture' },
+  { label: 'Data Ingestion',         icon: 'download',                 href: '/data-ingestion' },
   { label: 'Signal Generation',      icon: 'bolt',                     href: '/signal-generation' },
   { label: 'ML Pipeline',            icon: 'psychology',               href: '/ml-pipeline' },
   { label: 'Model Interpretability', icon: 'insights',                 href: '/interpretability' },

@@ -17,6 +17,7 @@ import { MlPipelinePage } from '@/pages/sections/MlPipelinePage'
 import { StoragePage } from '@/pages/sections/StoragePage'
 import { NetworkingPage } from '@/pages/sections/NetworkingPage'
 import { AuthPage } from '@/pages/sections/AuthPage'
+import { DataIngestionPage } from '@/pages/sections/DataIngestionPage'
 import { SignalGenerationPage } from '@/pages/sections/SignalGenerationPage'
 import { ModelInterpretabilityPage } from '@/pages/sections/ModelInterpretabilityPage'
 import { SaasMarketplacePage } from '@/pages/sections/SaasMarketplacePage'
@@ -47,6 +48,7 @@ function App() {
             <Route path="/storage"        element={<StoragePage />} />
             <Route path="/networking"     element={<NetworkingPage />} />
             <Route path="/auth"              element={<AuthPage />} />
+            <Route path="/data-ingestion"    element={<DataIngestionPage />} />
             <Route path="/signal-generation" element={<SignalGenerationPage />} />
             <Route path="/interpretability"  element={<ModelInterpretabilityPage />} />
             <Route path="/saas"              element={<SaasMarketplacePage />} />
