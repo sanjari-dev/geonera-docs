@@ -17,6 +17,12 @@ import { MlPipelinePage } from '@/pages/sections/MlPipelinePage'
 import { StoragePage } from '@/pages/sections/StoragePage'
 import { NetworkingPage } from '@/pages/sections/NetworkingPage'
 import { AuthPage } from '@/pages/sections/AuthPage'
+import { SignalGenerationPage } from '@/pages/sections/SignalGenerationPage'
+import { ModelInterpretabilityPage } from '@/pages/sections/ModelInterpretabilityPage'
+import { SaasMarketplacePage } from '@/pages/sections/SaasMarketplacePage'
+import { HelpPage } from '@/pages/sections/HelpPage'
+import { StatusPage } from '@/pages/sections/StatusPage'
+import { GlossaryPage } from '@/pages/sections/GlossaryPage'
 
 function App() {
   return (
@@ -40,10 +46,14 @@ function App() {
             <Route path="/ml-pipeline"    element={<MlPipelinePage />} />
             <Route path="/storage"        element={<StoragePage />} />
             <Route path="/networking"     element={<NetworkingPage />} />
-            <Route path="/auth"           element={<AuthPage />} />
-            <Route path="/help"           element={<NoContentPage />} />
-            <Route path="/status"         element={<NoContentPage />} />
-            <Route path="*"              element={<NoContentPage />} />
+            <Route path="/auth"              element={<AuthPage />} />
+            <Route path="/signal-generation" element={<SignalGenerationPage />} />
+            <Route path="/interpretability"  element={<ModelInterpretabilityPage />} />
+            <Route path="/saas"              element={<SaasMarketplacePage />} />
+            <Route path="/help"              element={<HelpPage />} />
+            <Route path="/status"            element={<StatusPage />} />
+            <Route path="/glossary"          element={<GlossaryPage />} />
+            <Route path="*"                  element={<NoContentPage />} />
           </Routes>
         </main>
       </div>
